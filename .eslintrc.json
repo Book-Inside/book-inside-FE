@@ -16,7 +16,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint", "prettier", "import"],
   "rules": {
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
@@ -24,7 +24,8 @@
     "no-console": ["warn", { "allow": ["warn", "error", "info"] }],
     "no-unused-vars": "error",
     "no-multiple-empty-lines": "error",
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "import/no-unresolved": [2, { "caseSensitive": true }]
   },
   "settings": {
     "import/resolver": {

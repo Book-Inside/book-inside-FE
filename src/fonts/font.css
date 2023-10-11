@@ -1,62 +1,83 @@
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Thin.otf") format("otf");
+  src: url("./Pretendard-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-ExtraBold.otf") format("otf");
+  src: url("./Pretendard-ExtraLight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Light.otf") format("otf");
+  src: url("./Pretendard-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Regular.otf") format("otf");
+  src: url("./Pretendard-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Medium.otf") format("otf");
+  src: url("./Pretendard-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-SemiBold.otf") format("otf");
+  src: url("./Pretendard-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Bold.otf") format("otf");
+  src: url("./Pretendard-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-ExtraBold.otf") format("otf");
+  src: url("./Pretendard-ExtraBold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Pretendard";
-  src: url("./Pretendard-Black.otf") format("otf");
+  src: url("./Pretendard-Black.otf") format("opentype");
   font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("./MaruBuri-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("./MaruBuri-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  src: url("./MaruBuri-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }

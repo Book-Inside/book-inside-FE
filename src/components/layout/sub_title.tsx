@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface SubtitleProps {
-  children: ReactNode;
-}
-
-export default function SubTitle({ children }: SubtitleProps) {
+export default function SubTitle({ children }: ChildrenProps) {
   return <h2 className="mb-4">{children}</h2>;
 }

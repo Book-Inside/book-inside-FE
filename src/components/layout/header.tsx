@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface HeaderProps {
-  children: ReactNode;
-}
-
-export default function Header({ children }: HeaderProps) {
+export default function Header({ children }: ChildrenProps) {
   return <header className="h-14 mb-6">{children}</header>;
 }

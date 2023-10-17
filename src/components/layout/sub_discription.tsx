@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface SubDiscriptionProps {
-  children: ReactNode;
-}
-
-export default function SubDiscription({ children }: SubDiscriptionProps) {
+export default function SubDiscription({ children }: ChildrenProps) {
   return <div className="mt-2">{children}</div>;
 }

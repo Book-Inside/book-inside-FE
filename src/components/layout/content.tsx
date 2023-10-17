@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface ContentProps {
-  children: ReactNode;
-}
-
-export default function Content({ children }: ContentProps) {
+export default function Content({ children }: ChildrenProps) {
   return <div className="">{children}</div>;
 }

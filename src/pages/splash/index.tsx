@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Splash() {
+export default function SplashPage() {
   const navigate = useNavigate();
 
   useEffect(() => {

@@ -1,9 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface MainDiscriptionProps {
-  children: ReactNode;
-}
-
-export default function MainDiscription({ children }: MainDiscriptionProps) {
+export default function MainDiscription({ children }: ChildrenProps) {
   return <div className="mt-1">{children}</div>;
 }

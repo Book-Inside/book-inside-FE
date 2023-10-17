@@ -1,3 +1,9 @@
+import Btn from "@components/btn";
+
 export default function InfoPage() {
-  return <div className="">info</div>;
+  return (
+    <div>
+      <Btn text="info" color="gray" />
+    </div>
+  );
 }

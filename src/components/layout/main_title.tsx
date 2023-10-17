@@ -1,8 +1,5 @@
-import { ReactNode } from "react";
+import { ChildrenProps } from "@interface/type";
 
-interface MainTitleProps {
-  children: ReactNode;
-}
-export default function MainTitle({ children }: MainTitleProps) {
+export default function MainTitle({ children }: ChildrenProps) {
   return <h1 className="font-bold text-2xl mb-6">{children}</h1>;
 }

@@ -26,7 +26,8 @@
       "@fonts/*": ["src/fonts/*"],
       "@interface/*": ["src/interface/*"],
       "@pages/*": ["src/pages/*"],
-      "@assets/*": ["src/assets/*"]
+      "@assets/*": ["src/assets/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"],

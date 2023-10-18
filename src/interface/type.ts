@@ -8,7 +8,12 @@ export interface ChildrenProps {
 // btn
 export interface BtnProps {
   text: string;
-  color: string;
+  color: "point" | "white" | "gray";
   disabled?: boolean | undefined;
   onClick?: () => void;
+}
+
+// app bar
+export interface AppBarProps {
+  isCurrentPage: boolean;
 }

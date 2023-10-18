@@ -1,3 +1,9 @@
+import AppBar from "@components/app_bar";
+
 export default function MainPage() {
-  return <div>main</div>;
+  return (
+    <div>
+      <AppBar />
+    </div>
+  );
 }

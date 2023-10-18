@@ -12,21 +12,18 @@ export default function Btn({
   const grayColor = color === "gray";
 
   const backgroundClass = pointColor
-    ? "bg-point-900 text-white focus:bg-point-focus hover:bg-point-focus disabled:bg-disable_bg disabled:text-disable_text"
+    ? "component_btn_point"
     : whiteColor
-    ? "bg-white text-point-900 border border-point-900 focus:border focus:border-point-focus hover:border hover:border-point-focus disabled:text-disable_text disabled:bg-white disabled:border-gray-100 disabled:border"
+    ? "component_btn_white"
     : grayColor
-    ? "bg-gray-50 text-gray-500 focus:bg-gray-100 focus:text-gray-600 hover:bg-gray-100 hover:text-gray-600 disabled:bg-gray-50 disabled:text-gray-200"
+    ? "component_btn_gray"
     : "";
   return (
     <button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className={cls(
-        "w-full font-semibold py-[17.5px] rounded-lg ",
-        backgroundClass,
-      )}
+      className={cls("component_btn", backgroundClass)}
     >
       {text}
     </button>

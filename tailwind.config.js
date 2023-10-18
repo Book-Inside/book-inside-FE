@@ -37,6 +37,9 @@ export default {
         disable_bg: "#EAECF0",
         disable_text: "#BDC1C8",
       },
+      boxShadow: {
+        app_bar: "0px 0px 12px 0px rgba(113, 118, 126, 0.18)",
+      },
     },
   },
   plugins: [],

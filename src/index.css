@@ -10,6 +10,29 @@ body {
   padding: 0 24px 0 24px;
 }
 
+/* book text */
 .book_text {
   font-family: "MaruBuri", sans-serif;
+}
+
+/* component btn */
+.component_btn {
+  @apply w-full font-semibold py-[17.5px] rounded-lg;
+}
+
+.component_btn_point {
+  @apply bg-point-900 text-white focus:bg-point-focus hover:bg-point-focus disabled:bg-disable_bg disabled:text-disable_text;
+}
+
+.component_btn_white {
+  @apply bg-white text-point-900 border border-point-900 focus:border focus:border-point-focus hover:border hover:border-point-focus disabled:text-disable_text disabled:bg-white disabled:border-gray-100 disabled:border;
+}
+
+.component_btn_gray {
+  @apply bg-gray-50 text-gray-500 focus:bg-gray-100 focus:text-gray-600 hover:bg-gray-100 hover:text-gray-600 disabled:bg-gray-50 disabled:text-gray-200;
+}
+
+/* component app_bar */
+.app_bar_text {
+  @apply font-normal text-[13px];
 }

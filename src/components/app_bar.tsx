@@ -15,9 +15,9 @@ export default function AppBar() {
   const isMyPage = pathname === "/";
 
   return (
-    <nav className="fixed bottom-0 flex justify-center w-full max-w-[390px] rounded-t-2xl bg-white shadow-app_bar">
-      <div className="flex pt-3 pb-[52px] space-x-2">
-        <Link to="/main" className="flex flex-col items-center space-y-2 px-3">
+    <nav className="app_bar">
+      <div className="app_bar_box">
+        <Link to="/main" className="app_bar_link">
           <BookIcon isCurrentPage={isMainPage} />
           <span
             className={cls(
@@ -28,7 +28,7 @@ export default function AppBar() {
             내 서재
           </span>
         </Link>
-        <Link to="/" className="flex flex-col items-center space-y-2 px-3">
+        <Link to="/" className="app_bar_link">
           <DataIcon isCurrentPage={isDataPage} />
           <span
             className={cls(
@@ -39,7 +39,7 @@ export default function AppBar() {
             통계
           </span>
         </Link>
-        <Link to="/main" className="flex flex-col items-center space-y-2 px-3">
+        <Link to="/main" className="app_bar_link">
           <AddIcon isCurrentPage={isAddPage} />
           <span
             className={cls(
@@ -50,7 +50,7 @@ export default function AppBar() {
             책 추가
           </span>
         </Link>
-        <Link to="/main" className="flex flex-col items-center space-y-2 px-3">
+        <Link to="/main" className="app_bar_link">
           <FeedIcon isCurrentPage={isFeedPage} />
           <span
             className={cls(
@@ -61,7 +61,7 @@ export default function AppBar() {
             피드
           </span>
         </Link>
-        <Link to="/main" className="flex flex-col items-center space-y-2 px-3">
+        <Link to="/main" className="app_bar_link">
           <MyIcon isCurrentPage={isMyPage} />
           <span
             className={cls(

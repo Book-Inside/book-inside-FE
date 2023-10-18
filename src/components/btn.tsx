@@ -12,18 +12,18 @@ export default function Btn({
   const grayColor = color === "gray";
 
   const backgroundClass = pointColor
-    ? "component_btn_point"
+    ? "btn_point"
     : whiteColor
-    ? "component_btn_white"
+    ? "btn_white"
     : grayColor
-    ? "component_btn_gray"
+    ? "btn_gray"
     : "";
   return (
     <button
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className={cls("component_btn", backgroundClass)}
+      className={cls("btn", backgroundClass)}
     >
       {text}
     </button>

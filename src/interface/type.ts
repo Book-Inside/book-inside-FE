@@ -17,3 +17,10 @@ export interface BtnProps {
 export interface AppBarProps {
   isCurrentPage: boolean;
 }
+
+// nav
+export interface NavProps {
+  isTitle?: boolean;
+  isIcon?:boolean;
+  title?: string;
+}

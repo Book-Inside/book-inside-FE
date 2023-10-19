@@ -48,3 +48,16 @@ body {
 .app_bar_text {
   @apply font-normal text-[13px];
 }
+
+/* nav */
+.nav {
+  @apply fixed top-0 bg-white w-full max-w-[390px];
+}
+
+.nav_box {
+  @apply flex justify-between py-4 px-6 items-center;
+}
+
+.nav_title {
+  @apply text-gray-900 text-lg font-bold;
+}

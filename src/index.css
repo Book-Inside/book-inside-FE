@@ -77,3 +77,16 @@ body {
 .header_icon {
   @apply flex space-x-3;
 }
+
+/* dropdown */
+.dropdown {
+  @apply relative mt-16;
+}
+
+.dropdown_box {
+  @apply absolute z-10 mt-2 w-full mx-6 bg-white border border-gray-100 rounded-lg shadow-dropdown py-3 space-y-1;
+}
+
+.dropdown_option {
+  @apply p-2 bg-white hover:bg-green-50 hover:text-green-700 cursor-pointer mx-2 rounded-lg;
+}

@@ -39,6 +39,7 @@ export default {
       },
       boxShadow: {
         app_bar: "0px 0px 12px 0px rgba(113, 118, 126, 0.18)",
+        dropdown: "0px 0px 12px 0px rgba(113, 118, 126, 0.13)",
       },
     },
   },

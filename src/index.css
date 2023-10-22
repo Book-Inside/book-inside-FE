@@ -112,3 +112,20 @@ body {
 .sub_title_all {
   @apply space-x-1 flex items-center cursor-pointer;
 }
+
+/* progress_bar */
+.progress_bar_box {
+  @apply flex items-center space-x-2;
+}
+
+.progress_bar_all {
+  @apply flex w-full bg-gray-100 rounded-full h-1.5;
+}
+
+.progress_bar_progress {
+  @apply bg-green-500 h-1.5 rounded-full;
+}
+
+.progress_bar_state {
+  @apply whitespace-nowrap font-normal text-sm text-green-500;
+}

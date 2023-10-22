@@ -24,3 +24,8 @@ export interface NavProps {
   isIcon?:boolean;
   title?: string;
 }
+
+// progress bar
+export interface ProgressBarProps {
+  progress: number;
+}

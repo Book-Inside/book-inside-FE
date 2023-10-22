@@ -1,7 +1,7 @@
 import Header from "@components/header";
-import Body from "@components/layouts/body";
+import Body from "@components/layout/body";
 
-import MainTitle from "@components/layouts/main_title";
+import MainTitle from "@components/layout/main_title";
 
 export default function MainPage() {
   return (

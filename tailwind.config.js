@@ -18,6 +18,7 @@ export default {
           focus: "#132D21",
         },
         gray: {
+          25: "#F5F6F8",
           50: "#F2F4F6",
           100: "#EAECF0",
           200: "#D6D9DE",

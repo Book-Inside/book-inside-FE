@@ -6,8 +6,8 @@ body {
   font-family: "Pretendard", sans-serif;
   margin: 0 auto;
   min-width: 390px;
+  max-width: 390px;
   width: 390px;
-  padding: 0 24px 0 24px;
 }
 
 /* book text */

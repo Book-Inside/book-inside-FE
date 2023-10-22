@@ -2,8 +2,8 @@ import ProfileIcon from "@assets/icons/profile_icon";
 
 export default function MainTitle() {
   return (
-    <div className="flex relative">
-      <div className="flex items-center space-x-2">
+    <div className="main_title_box">
+      <div className="main_title_profile_text">
         <ProfileIcon />
         <span className="text-xl">로그인 후 이용할 수 있어요</span>
       </div>

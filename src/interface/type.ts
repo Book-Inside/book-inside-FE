@@ -8,9 +8,10 @@ export interface ChildrenProps {
 // btn
 export interface BtnProps {
   text: string;
-  color: "point" | "white" | "gray";
+  color: "point" | "white" | "gray" | "kakao" | "naver" | "google";
   disabled?: boolean | undefined;
   onClick?: () => void;
+  icon?: boolean | undefined;
 }
 
 // app bar

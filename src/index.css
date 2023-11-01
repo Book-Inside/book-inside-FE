@@ -6,10 +6,126 @@ body {
   font-family: "Pretendard", sans-serif;
   margin: 0 auto;
   min-width: 390px;
+  max-width: 390px;
   width: 390px;
-  padding: 0 24px 0 24px;
 }
 
+/* book text */
 .book_text {
   font-family: "MaruBuri", sans-serif;
+}
+
+/* component btn */
+.btn {
+  @apply w-full font-semibold py-[17.5px] rounded-lg;
+}
+
+.btn_point {
+  @apply bg-point-900 text-white focus:bg-point-focus hover:bg-point-focus disabled:bg-disable_bg disabled:text-disable_text;
+}
+
+.btn_white {
+  @apply bg-white text-point-900 border border-point-900 focus:border focus:border-point-focus hover:border hover:border-point-focus disabled:text-disable_text disabled:bg-white disabled:border-gray-100 disabled:border;
+}
+
+.btn_gray {
+  @apply bg-gray-50 text-gray-500 focus:bg-gray-100 focus:text-gray-600 hover:bg-gray-100 hover:text-gray-600 disabled:bg-gray-50 disabled:text-gray-200;
+}
+
+/* component app_bar */
+.app_bar {
+  @apply fixed bottom-0 flex justify-center w-full max-w-[390px] rounded-t-2xl bg-white shadow-app_bar z-50;
+}
+
+.app_bar_box {
+  @apply flex pt-3 pb-[52px] space-x-2;
+}
+
+.app_bar_link {
+  @apply flex flex-col items-center space-y-2 px-3;
+}
+
+.app_bar_text {
+  @apply font-normal text-[13px];
+}
+
+/* nav */
+.nav {
+  @apply fixed top-0 bg-white w-full max-w-[390px] z-50;
+}
+
+.nav_box {
+  @apply flex justify-between py-4 px-6 items-center;
+}
+
+.nav_title {
+  @apply text-gray-900 text-lg font-bold;
+}
+
+/* header */
+.header {
+  @apply fixed top-0 bg-white w-full max-w-[390px] z-50;
+}
+
+.header_box {
+  @apply flex justify-between py-4 px-6 items-center;
+}
+
+.header_logo {
+}
+
+.header_icon {
+  @apply flex space-x-3;
+}
+
+/* dropdown */
+.dropdown {
+  @apply relative mt-16;
+}
+
+.dropdown_box {
+  @apply absolute z-10 mt-2 w-full mx-6 bg-white border border-gray-100 rounded-lg shadow-dropdown py-3 space-y-1;
+}
+
+.dropdown_option {
+  @apply p-2 bg-white hover:bg-green-50 hover:text-green-700 cursor-pointer mx-2 rounded-lg;
+}
+
+/* main_title */
+.main_title_box {
+  @apply flex relative;
+}
+
+.main_title_profile_text {
+  @apply flex items-center space-x-2;
+}
+
+.main_title_count {
+  @apply font-normal text-sm text-gray-500 absolute bottom-0 right-0;
+}
+
+/* sub_title */
+.sub_title_box {
+  @apply flex justify-between font-bold;
+}
+
+.sub_title_all {
+  @apply space-x-1 flex items-center cursor-pointer;
+}
+
+/* progress_bar */
+.progress_bar_box {
+  @apply flex items-center space-x-2;
+}
+
+.progress_bar_all {
+  @apply flex w-full bg-gray-100 rounded-full h-1.5;
+}
+
+.progress_bar_progress {
+  @apply bg-green-500 h-1.5 rounded-full;
+}
+
+.progress_bar_state {
+  @apply whitespace-nowrap font-normal text-sm text-green-500;
 }

@@ -15,8 +15,10 @@ export default {
           700: "#3F8363",
           800: "#2F6049",
           900: "#1D3D2E",
+          focus: "#132D21",
         },
         gray: {
+          25: "#F5F6F8",
           50: "#F2F4F6",
           100: "#EAECF0",
           200: "#D6D9DE",
@@ -35,6 +37,10 @@ export default {
         error: "#FF4B4B",
         disable_bg: "#EAECF0",
         disable_text: "#BDC1C8",
+      },
+      boxShadow: {
+        app_bar: "0px 0px 12px 0px rgba(113, 118, 126, 0.18)",
+        dropdown: "0px 0px 12px 0px rgba(113, 118, 126, 0.13)",
       },
     },
   },

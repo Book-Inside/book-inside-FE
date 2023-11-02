@@ -1,7 +1,8 @@
 import CheckIcon from "@assets/icons/check_icon";
 import Btn from "./btn";
-import SmallCheckIcon from "@assets/icons/small_check_icon";
+import SmallCheckIcon from "@assets/icons/check_xs_icon";
 import EyeCloseIcon from "@assets/icons/eye_close_icon";
+import CheckXsIcon from "@assets/icons/check_xs_icon";
 
 export default function LoginForm() {
   return (
@@ -25,7 +26,9 @@ export default function LoginForm() {
             <div className="login_check_layout">
               <div className="login_check_icon_box">
                 <input type="checkbox" className="login_check" />
-                <SmallCheckIcon />
+                <div className="absolute pointer-events-none peer-checked:bg-point-800">
+                  <CheckXsIcon />
+                </div>
               </div>
               <label htmlFor="" className="login_check_label">
                 아이디 저장
@@ -34,7 +37,9 @@ export default function LoginForm() {
             <div className="login_check_layout">
               <div className="login_check_icon_box">
                 <input type="checkbox" className="login_check" />
-                <SmallCheckIcon />
+                <div className="absolute pointer-events-none peer-checked:bg-point-800">
+                  <CheckXsIcon />
+                </div>
               </div>
               <label htmlFor="" className="login_check_label">
                 자동로그인

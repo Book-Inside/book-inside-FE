@@ -172,6 +172,25 @@ body {
 }
 
 /* signup email */
+.signup_email_input {
+  @apply focus:border-point-900 focus:outline-none;
+}
+
 .signup_email_text {
   @apply text-gray-600 text-sm mt-2;
+}
+
+/* signup certification */
+.signup_certification_recurrent {
+  @apply text-gray-500 text-sm underline cursor-pointer flex justify-end mt-2;
+}
+
+.signup_certification_complete {
+  @apply flex items-center space-x-1 text-gray-700 text-sm mt-2;
+}
+
+/* component pop_up */
+.popup-background {
+  /* 기타 스타일 */
+  backdrop-filter: blur(10px); /* 블러 효과 적용 */
 }

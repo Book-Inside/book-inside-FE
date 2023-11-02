@@ -1,9 +1,22 @@
+import { useEffect } from "react";
 import Btn from "./btn";
+import { Link } from "react-router-dom";
 
 export default function PopUp() {
+  useEffect(() => {
+    // overflow: hidden을 적용하여 body 스크롤을 비활성화
+    document.body.style.overflow = "hidden";
+
+    // 팝업이 언마운트될 때 실행될 클린업 함수
+    return () => {
+      // overflow를 제거하여 스크롤을 다시 활성화
+      document.body.style.overflow = "";
+    };
+  }, []); // 빈 의존성 배열로 마운트될 때만 실행
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60">
-      <div className="rounded-2xl p-6 min-w-[342px] bg-white">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60 popup-background ">
+      <div className="rounded-2xl p-6 min-w-[342px] bg-white shadow-app_bar">
         <div className="flex flex-col space-y-4 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,9 +43,12 @@ export default function PopUp() {
         <div className="mt-6 mb-4">
           <Btn text="프로필 설정하기" color="point" />
         </div>
-        <div className="text-gray-500 underline text-sm flex justify-center cursor-pointer">
+        <Link
+          to="/login"
+          className="text-gray-500 underline text-sm flex justify-center cursor-pointer"
+        >
           다음에 할래요
-        </div>
+        </Link>
       </div>
     </div>
   );

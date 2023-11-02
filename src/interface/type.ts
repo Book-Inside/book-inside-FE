@@ -45,13 +45,10 @@ export interface SignupFormProps {
 // signup_email
 export interface SignupEmailProps {
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  handleSelect: (selected: string) => void;
-  handleClick: () => void;
-  handleBlur: () => void;
   handleNext: () => void;
   email: string;
   selected: string;
-  isOpen: boolean;
+  setSelected: React.Dispatch<React.SetStateAction<string>>;
 }
 
 // signup_certification

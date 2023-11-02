@@ -8,7 +8,7 @@ export interface ChildrenProps {
 // btn
 export interface BtnProps {
   text: string;
-  color: "point" | "white" | "gray" | "kakao" | "naver" | "google";
+  color: "point" | "white" | "gray" | "kakao" | "naver" | "google" | string;
   disabled?: boolean | undefined;
   onClick?: () => void;
   icon?: boolean | undefined;
@@ -35,6 +35,16 @@ export interface ProgressBarProps {
 export interface DropdownProps {
   handleSelect: (selected: string) => void;
   isOpen: boolean;
+}
+
+// pop_up
+export interface PopUpProps {
+  icon: JSX.Element;
+  title: string;
+  message: string;
+  buttons: { text: string; color: string; onClick?: () => void }[];
+  linkText?: string;
+  linkTo?: string;
 }
 
 // signup_form

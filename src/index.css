@@ -190,7 +190,18 @@ body {
 }
 
 /* component pop_up */
-.popup-background {
-  /* 기타 스타일 */
+.popup_background {
   backdrop-filter: blur(10px); /* 블러 효과 적용 */
+}
+
+.popup_background_box {
+  @apply fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60;
+}
+
+.popup_box {
+  @apply rounded-2xl p-6 min-w-[342px] bg-white shadow-app_bar;
+}
+
+.popup_link {
+  @apply text-gray-500 underline text-sm flex justify-center cursor-pointer;
 }

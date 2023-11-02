@@ -14,7 +14,7 @@ export interface BtnProps {
   icon?: boolean | undefined;
 }
 
-// app bar
+// app_bar
 export interface AppBarProps {
   isCurrentPage: boolean;
 }
@@ -22,11 +22,62 @@ export interface AppBarProps {
 // nav
 export interface NavProps {
   isTitle?: boolean;
-  isIcon?:boolean;
+  isIcon?: boolean;
   title?: string;
 }
 
-// progress bar
+// progress_bar
 export interface ProgressBarProps {
   progress: number;
+}
+
+// dropdown
+export interface DropdownProps {
+  handleSelect: (selected: string) => void;
+  isOpen: boolean;
+}
+
+// signup_form
+export interface SignupFormProps {
+  setProgress: (progress: number) => void;
+}
+
+// signup_email
+export interface SignupEmailProps {
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleSelect: (selected: string) => void;
+  handleClick: () => void;
+  handleBlur: () => void;
+  handleNext: () => void;
+  email: string;
+  selected: string;
+  isOpen: boolean;
+}
+
+// signup_certification
+export interface SignupCertificationProps {
+  email: string;
+  selected: string;
+  certification: string;
+  handleNext: () => void;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+// signup_password
+export interface SignupPasswordProps {
+  email: string;
+  selected: string;
+  password: string;
+  handleNext: () => void;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+// signup_verify_password
+export interface SignupVerifyPasswordProps {
+  email: string;
+  selected: string;
+  verifyPassword: string;
+  password: string;
+  handleNext: () => void;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

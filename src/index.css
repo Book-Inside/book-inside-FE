@@ -33,15 +33,15 @@ body {
 }
 
 .btn_kakao {
-  @apply bg-[#FFEA28] text-gray-700 focus:bg-[#FFEA28] focus:text-gray-700 hover:bg-[#FFEA28] hover:text-gray-700 disabled:bg-[#FFEA28] disabled:text-gray-700;
+  @apply bg-[#FFEA28] text-gray-700;
 }
 
 .btn_naver {
-  @apply bg-[#2AC255] text-white focus:bg-[#2AC255] focus:text-white hover:bg-[#2AC255] hover:text-white disabled:bg-[#2AC255] disabled:text-white;
+  @apply bg-[#2AC255] text-white;
 }
 
 .btn_google {
-  @apply bg-white text-gray-700 focus:bg-white focus:text-gray-700 hover:bg-white hover:text-gray-700 disabled:bg-white disabled:text-gray-700 border border-gray-300;
+  @apply bg-white text-gray-700  border border-gray-300;
 }
 
 /* component app_bar */
@@ -91,12 +91,8 @@ body {
 }
 
 /* component dropdown */
-.dropdown {
-  @apply relative mt-16;
-}
-
 .dropdown_box {
-  @apply absolute z-10 mt-2 w-full mx-6 bg-white border border-gray-100 rounded-lg shadow-dropdown py-3 space-y-1;
+  @apply absolute z-10 mt-2 min-w-[342px] bg-white border border-gray-100 rounded-lg shadow-dropdown py-3 space-y-1;
 }
 
 .dropdown_option {
@@ -142,7 +138,7 @@ body {
   @apply whitespace-nowrap font-normal text-sm text-green-500;
 }
 
-/* page login */
+/* page login / page signup */
 .login_label {
   @apply text-lg font-bold text-gray-900;
 }
@@ -173,4 +169,9 @@ body {
 
 .login_check_label {
   @apply text-sm text-gray-500;
+}
+
+/* signup email */
+.signup_email_text {
+  @apply text-gray-600 text-sm mt-2;
 }

@@ -5,6 +5,7 @@ import SignupPassword from "./signup_password";
 import { SignupFormProps } from "@interface/type";
 import SignupVerifyPassword from "./signup_verify_password";
 import PopUp from "./pop_up";
+import CheckPopUpIcon from "@assets/icons/check_pop_up_icon";
 
 export default function SignupForm({ setProgress }: SignupFormProps) {
   // 이메일
@@ -112,7 +113,16 @@ export default function SignupForm({ setProgress }: SignupFormProps) {
           password={password}
         />
       )}
-      {step === "가입완료" && <PopUp />}
+      {step === "가입완료" && (
+        <PopUp
+          icon={<CheckPopUpIcon />}
+          title="회원가입 완료!"
+          message="본격 시작하기 전 프로필을 먼저 설정해볼까요?"
+          buttons={[{ text: "프로필 설정하기", color: "point" }]}
+          linkTo="/login"
+          linkText="다음에 할래요"
+        />
+      )}
     </div>
   );
 }

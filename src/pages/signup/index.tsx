@@ -13,9 +13,9 @@ export default function SignupPage() {
         <div
           className="h-[2px] bg-gray-700"
           style={{ width: `${progress}%` }}
-        ></div>
+        />
       </div>
-      <BodyLayout>
+      <BodyLayout isMargin>
         <SignupForm setProgress={setProgress} />
       </BodyLayout>
     </>

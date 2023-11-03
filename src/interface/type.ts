@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 // Layout
 export interface ChildrenProps {
   children: ReactNode;
+  isMargin?:boolean;
 }
 
 // btn

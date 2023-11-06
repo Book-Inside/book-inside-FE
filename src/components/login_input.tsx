@@ -1,3 +1,5 @@
+import { cls } from "@utils/index";
+
 interface LoginInputProps {
   id: string;
   type: string;
@@ -14,7 +16,7 @@ export default function LoginInput({
   icon,
 }: LoginInputProps) {
   return (
-    <div className="mb-4">
+    <div className={cls(id === "email" ? "mb-2" : "mb-4")}>
       <label htmlFor={id} className="login_label">
         {label}
       </label>

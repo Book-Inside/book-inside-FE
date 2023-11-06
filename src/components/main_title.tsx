@@ -1,15 +1,36 @@
-import ProfileIcon from "@assets/icons/profile_icon";
+import { MainTitleProps } from "@interface/type";
+import { cls } from "@utils/index";
 
-export default function MainTitle() {
+export default function MainTitle({
+  leftIcon,
+  leftText,
+  count,
+  rightText,
+  rightIcon,
+}: MainTitleProps) {
   return (
-    <div className="main_title_box">
-      <div className="main_title_profile_text">
-        <ProfileIcon />
-        <span className="text-xl">로그인 후 이용할 수 있어요</span>
+    <div className="flex justify-between mb-4">
+      <div className="flex items-center space-x-2">
+        {leftIcon}
+        <span
+          className={cls(
+            "text-gray-900 font-bold",
+            leftIcon ? "text-xl" : "text-lg",
+          )}
+        >
+          {leftText}
+        </span>
       </div>
-      <div className="font-normal text-sm text-gray-500 absolute bottom-0 right-0">
-        0권
-      </div>
+      {leftIcon ? (
+        <div className="flex font-medium items-end text-gray-500 text-sm ">
+          {count}권
+        </div>
+      ) : (
+        <div className="flex items-center space-x-1">
+          <span className="text-gray-700 font-medium">{rightText}</span>
+          {rightIcon}
+        </div>
+      )}
     </div>
   );
 }

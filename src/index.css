@@ -210,3 +210,8 @@ body {
 .main_library_popup_image {
   background-image: url(./assets//images/Rectangle.png);
 }
+
+/* component book_list */
+.book_list_box {
+  @apply shadow-dropdown flex items-center space-x-2 rounded-xl;
+}

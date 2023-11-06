@@ -1,9 +1,11 @@
 import { ReactNode } from "react";
 
+// COMPONENT
+
 // Layout
 export interface ChildrenProps {
   children: ReactNode;
-  isMargin?:boolean;
+  isMargin?: boolean;
 }
 
 // btn
@@ -47,6 +49,24 @@ export interface PopUpProps {
   linkText?: string;
   linkTo?: string;
 }
+
+// main_title
+export interface MainTitleProps {
+  leftIcon?: JSX.Element;
+  leftText: string;
+  count?: number;
+  rightText?: string;
+  rightIcon?: JSX.Element;
+}
+
+// book_list
+export interface BookListProps {
+  icon: JSX.Element;
+  count: number;
+  text: string;
+}
+
+// PAGES
 
 // signup_form
 export interface SignupFormProps {

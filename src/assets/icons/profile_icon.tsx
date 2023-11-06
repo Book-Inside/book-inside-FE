@@ -2,12 +2,11 @@ export default function ProfileIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
       viewBox="0 0 32 32"
       fill="none"
+      className="w-8 h-8"
     >
-      <g clip-path="url(#clip0_222_9409)">
+      <g clipPath="url(#clip0_222_9409)">
         <rect width="32" height="32" rx="16" fill="#F2F4F7" />
         <circle cx="15.9995" cy="10.8315" r="5.90769" fill="#D6D9DE" />
         <path

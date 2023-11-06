@@ -1,4 +1,3 @@
-import BodyLayout from "@components/layout/body_layout";
 import Nav from "@components/nav";
 import SignupForm from "@components/signup_form";
 import { useState } from "react";
@@ -15,9 +14,7 @@ export default function SignupPage() {
           style={{ width: `${progress}%` }}
         />
       </div>
-      <BodyLayout isMargin>
-        <SignupForm setProgress={setProgress} />
-      </BodyLayout>
+      <SignupForm setProgress={setProgress} />
     </>
   );
 }

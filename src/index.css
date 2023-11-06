@@ -138,7 +138,7 @@ body {
   @apply whitespace-nowrap font-normal text-sm text-green-500;
 }
 
-/* page login / page signup */
+/* login form / page signup form */
 .login_label {
   @apply text-lg font-bold text-gray-900;
 }
@@ -204,4 +204,9 @@ body {
 
 .popup_link {
   @apply text-gray-500 underline text-sm flex justify-center cursor-pointer;
+}
+
+/* main library */
+.main_library_popup_image {
+  background-image: url(./assets//images/Rectangle.png);
 }

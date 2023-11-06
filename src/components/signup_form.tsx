@@ -6,6 +6,7 @@ import { SignupFormProps } from "@interface/type";
 import SignupVerifyPassword from "./signup_verify_password";
 import PopUp from "./pop_up";
 import CheckPopUpIcon from "@assets/icons/check_pop_up_icon";
+import BodyLayout from "./layout/body_layout";
 
 export default function SignupForm({ setProgress }: SignupFormProps) {
   // 이메일
@@ -75,54 +76,56 @@ export default function SignupForm({ setProgress }: SignupFormProps) {
   }, [step, setProgress]);
 
   return (
-    <div className="py-6">
-      {step === "이메일" && (
-        <SignupEmail
-          email={email}
-          selected={selected}
-          handleChange={handleChange}
-          setSelected={setSelected}
-          handleNext={() => setStep("인증")}
-        />
-      )}
-      {step === "인증" && (
-        <SignupCertification
-          handleNext={() => setStep("비밀번호")}
-          certification={certification}
-          email={email}
-          selected={selected}
-          handleChange={handleChange}
-        />
-      )}
-      {step === "비밀번호" && (
-        <SignupPassword
-          email={email}
-          handleChange={handleChange}
-          handleNext={() => setStep("비밀번호확인")}
-          password={password}
-          selected={selected}
-        />
-      )}
-      {step === "비밀번호확인" && (
-        <SignupVerifyPassword
-          email={email}
-          selected={selected}
-          handleChange={handleChange}
-          handleNext={() => setStep("가입완료")}
-          verifyPassword={verifyPassword}
-          password={password}
-        />
-      )}
-      {step === "가입완료" && (
-        <PopUp
-          icon={<CheckPopUpIcon />}
-          title="회원가입 완료!"
-          message="본격 시작하기 전 프로필을 먼저 설정해볼까요?"
-          buttons={[{ text: "프로필 설정하기", color: "point" }]}
-          linkTo="/login"
-          linkText="다음에 할래요"
-        />
-      )}
-    </div>
+    <BodyLayout isMargin>
+      <div className="py-6">
+        {step === "이메일" && (
+          <SignupEmail
+            email={email}
+            selected={selected}
+            handleChange={handleChange}
+            setSelected={setSelected}
+            handleNext={() => setStep("인증")}
+          />
+        )}
+        {step === "인증" && (
+          <SignupCertification
+            handleNext={() => setStep("비밀번호")}
+            certification={certification}
+            email={email}
+            selected={selected}
+            handleChange={handleChange}
+          />
+        )}
+        {step === "비밀번호" && (
+          <SignupPassword
+            email={email}
+            handleChange={handleChange}
+            handleNext={() => setStep("비밀번호확인")}
+            password={password}
+            selected={selected}
+          />
+        )}
+        {step === "비밀번호확인" && (
+          <SignupVerifyPassword
+            email={email}
+            selected={selected}
+            handleChange={handleChange}
+            handleNext={() => setStep("가입완료")}
+            verifyPassword={verifyPassword}
+            password={password}
+          />
+        )}
+        {step === "가입완료" && (
+          <PopUp
+            icon={<CheckPopUpIcon />}
+            title="회원가입 완료!"
+            message="본격 시작하기 전 프로필을 먼저 설정해볼까요?"
+            buttons={[{ text: "프로필 설정하기", color: "point" }]}
+            linkTo="/login"
+            linkText="다음에 할래요"
+          />
+        )}
+      </div>
+    </BodyLayout>
   );
 }

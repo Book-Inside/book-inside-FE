@@ -5,10 +5,11 @@ import LoginSocial from "./login_social";
 import LoginFormFooter from "./login_form_footer";
 import Login_Checkbox from "./login_checkbox";
 import LoginInput from "./login_input";
+import BodyLayout from "./layout/body_layout";
 
 export default function LoginForm() {
   return (
-    <>
+    <BodyLayout>
       <form className="pt-6 mb-8">
         <LoginInput
           label="이메일"
@@ -34,6 +35,6 @@ export default function LoginForm() {
         <LoginFormFooter />
       </form>
       <LoginSocial />
-    </>
+    </BodyLayout>
   );
 }
